@@ -33,3 +33,13 @@ function new_Gradent() {
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, 200, 100);
 }
+
+//Form Validation
+function validateForm() {
+  var x = document.forms["application-form"]["fname", "lname"].value;
+  if (x == "") {
+    alert("Please fill in all fields");
+    return false;
+  }
+}
+
